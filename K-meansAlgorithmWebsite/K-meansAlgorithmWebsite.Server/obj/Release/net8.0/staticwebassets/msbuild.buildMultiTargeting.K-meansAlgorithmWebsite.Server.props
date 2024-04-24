@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\K-meansAlgorithmWebsite.Server.props" />
+</Project>

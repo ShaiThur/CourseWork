@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "AKPMCwtYyTg49LNZsVtqqsT6xyrPkTfbLhRgYhIDmIs=",
+  "Source": "K-meansAlgorithmWebsite.Server",
+  "BasePath": "_content/K-meansAlgorithmWebsite.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\cpp\\K-meansAlgorithmWebsite\\k-meansalgorithmwebsite.client\\k-meansalgorithmwebsite.client.esproj",
+      "Version": 2,
+      "Source": "k-meansalgorithmwebsite.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

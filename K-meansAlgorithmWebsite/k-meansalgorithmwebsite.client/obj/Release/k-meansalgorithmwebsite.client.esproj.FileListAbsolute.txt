@@ -1,0 +1,1 @@
+D:\cpp\K-meansAlgorithmWebsite\k-meansalgorithmwebsite.client\obj\Release\k-meansalgorithmwebsite.client.esproj.CoreCompileInputs.cache

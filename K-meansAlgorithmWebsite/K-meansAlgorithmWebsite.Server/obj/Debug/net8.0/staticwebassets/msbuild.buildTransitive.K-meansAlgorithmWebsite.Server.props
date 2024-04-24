@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\K-meansAlgorithmWebsite.Server.props" />
+</Project>

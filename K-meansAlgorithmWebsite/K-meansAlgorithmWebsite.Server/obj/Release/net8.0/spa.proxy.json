@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:5173",
+"RedirectUrl": "",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "D:\\cpp\\K-meansAlgorithmWebsite\\K-meansAlgorithmWebsite.Server\\..\\k-meansalgorithmwebsite.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}
