@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+
+#mainDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#clusters{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+}
+
+.inputs label{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+
+.buttons{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 30px;
+    width: 730px;
+}
+
+tr{
+    display: flex;
+    flex-direction: row;
+}
+
+th{
+    width: 96.17px;
+    border: 4px solid;
+    border-color: gray;
+    text-align: center;
+    margin-bottom: -4px;
+}
+
+td{
+    width: 100px;
+    border: 2px solid;
+    border-color: gray;
+    text-align: center;
+    border-top: none;
+}

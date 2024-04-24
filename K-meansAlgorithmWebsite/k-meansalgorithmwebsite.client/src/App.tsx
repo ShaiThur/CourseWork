@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Graph3D from './ThreeGraph';
+import "../src/css/styles.css"
 
 interface DataPoint {
   x: number;
@@ -68,6 +69,8 @@ const App: React.FC = () => {
 
 
   const addData = async () => {
+    updateGraph();
+    console.log(datasets);
     const res = await sendData(dataRequest, 'algorithm/ClusterData');
     // const coefs = await sendData(dataRequest, 'algorithm/ReceiveCoefficients');
 
@@ -91,19 +94,35 @@ const App: React.FC = () => {
   }
 
   return (
-    <div>
+    <div id='mainDiv'>
 
-      <input type="number" placeholder='' title='X' value={x} onChange={(e) => setX(Number(e.target.value))} />
-      <input type="number" placeholder='' title='Y' value={y} onChange={(e) => setY(Number(e.target.value))} />
-      <input type="number" placeholder='' title='Z' value={z} onChange={(e) => setZ(Number(e.target.value))} />
-      <input type="number" placeholder='' title='clusters' value={clusters} onChange={(e) => setClusters(Number(e.target.value))} />
-      <button onClick={handleAddClick}>Add</button>
-      <button onClick={addData}>Send</button>
-      <button onClick={updateGraph}>Update</button>
+      <div className="inputs">
+        <label htmlFor="">
+          <p>X</p>
+          <input type="number" placeholder='' title='X' value={x} onChange={(e) => setX(Number(e.target.value))} />
+        </label>
+        <label htmlFor="">
+          <p>Y</p>
+          <input type="number" placeholder='' title='Y' value={y} onChange={(e) => setY(Number(e.target.value))} />
+        </label>
+        <label htmlFor="">
+          <p>Z</p>
+          <input type="number" placeholder='' title='Z' value={z} onChange={(e) => setZ(Number(e.target.value))} />
+        </label>
+        <label htmlFor="">
+          <p>Clusters</p>
+          <input type="number" placeholder='' title='clusters' value={clusters} onChange={(e) => setClusters(Number(e.target.value))} />
+        </label>
+      </div>
+      <div className="buttons">
+        <button onClick={handleAddClick}>Add</button>
+        <button onClick={addData}>Send</button>
+        <button onClick={updateGraph}>Update</button>
+      </div>
 
       <Graph3D dataPoints = { datasets } clusters={ clusterResponse?.clusteringResult } />
 
-      <div>Clusters count: {clusters}</div>
+      <div id='clusters'>Clusters count: {clusters}</div>
       {clusterResponse && (
       <div>
         <div>clusters: {JSON.stringify(clusterResponse.clusteringResult)}</div>
@@ -119,7 +138,7 @@ const App: React.FC = () => {
       <div>
       <table>
         <thead>
-          <tr>
+          <tr id='header'>
             <th>X</th>
             <th>Y</th>
             <th>Z</th>

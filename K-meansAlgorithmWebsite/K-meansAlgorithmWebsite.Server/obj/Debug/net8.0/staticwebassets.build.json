@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "AKPMCwtYyTg49LNZsVtqqsT6xyrPkTfbLhRgYhIDmIs=",
+  "Hash": "oaYZiuTP73EbLXkb2Xt5OV0VxnC7RQOnuYae8q+SuPU=",
   "Source": "K-meansAlgorithmWebsite.Server",
   "BasePath": "_content/K-meansAlgorithmWebsite.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "D:\\cpp\\K-meansAlgorithmWebsite\\k-meansalgorithmwebsite.client\\k-meansalgorithmwebsite.client.esproj",
+      "Identity": "C:\\Users\\Арсений\\Desktop\\4cем\\ТПР\\Курсовая_сайт\\CourseWork\\K-meansAlgorithmWebsite\\k-meansalgorithmwebsite.client\\k-meansalgorithmwebsite.client.esproj",
       "Version": 2,
       "Source": "k-meansalgorithmwebsite.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",

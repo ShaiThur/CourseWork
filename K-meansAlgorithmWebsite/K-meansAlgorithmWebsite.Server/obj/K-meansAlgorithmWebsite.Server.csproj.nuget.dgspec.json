@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\cpp\\K-meansAlgorithmWebsite\\K-meansAlgorithmWebsite.Server\\K-meansAlgorithmWebsite.Server.csproj": {}
+    "C:\\Users\\Арсений\\Desktop\\4cем\\ТПР\\Курсовая_сайт\\CourseWork\\K-meansAlgorithmWebsite\\K-meansAlgorithmWebsite.Server\\K-meansAlgorithmWebsite.Server.csproj": {}
   },
   "projects": {
-    "D:\\cpp\\K-meansAlgorithmWebsite\\K-meansAlgorithmWebsite.Server\\K-meansAlgorithmWebsite.Server.csproj": {
+    "C:\\Users\\Арсений\\Desktop\\4cем\\ТПР\\Курсовая_сайт\\CourseWork\\K-meansAlgorithmWebsite\\K-meansAlgorithmWebsite.Server\\K-meansAlgorithmWebsite.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\cpp\\K-meansAlgorithmWebsite\\K-meansAlgorithmWebsite.Server\\K-meansAlgorithmWebsite.Server.csproj",
+        "projectUniqueName": "C:\\Users\\Арсений\\Desktop\\4cем\\ТПР\\Курсовая_сайт\\CourseWork\\K-meansAlgorithmWebsite\\K-meansAlgorithmWebsite.Server\\K-meansAlgorithmWebsite.Server.csproj",
         "projectName": "K-meansAlgorithmWebsite.Server",
-        "projectPath": "D:\\cpp\\K-meansAlgorithmWebsite\\K-meansAlgorithmWebsite.Server\\K-meansAlgorithmWebsite.Server.csproj",
-        "packagesPath": "C:\\Users\\sartu\\.nuget\\packages\\",
-        "outputPath": "D:\\cpp\\K-meansAlgorithmWebsite\\K-meansAlgorithmWebsite.Server\\obj\\",
+        "projectPath": "C:\\Users\\Арсений\\Desktop\\4cем\\ТПР\\Курсовая_сайт\\CourseWork\\K-meansAlgorithmWebsite\\K-meansAlgorithmWebsite.Server\\K-meansAlgorithmWebsite.Server.csproj",
+        "packagesPath": "C:\\Users\\Арсений\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Арсений\\Desktop\\4cем\\ТПР\\Курсовая_сайт\\CourseWork\\K-meansAlgorithmWebsite\\K-meansAlgorithmWebsite.Server\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\sartu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Арсений\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -77,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

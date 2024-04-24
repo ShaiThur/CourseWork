@@ -40,7 +40,7 @@ const Graph3D: React.FC<Props> = ({ dataPoints, clusters }) => {
     const axesHelper = new THREE.AxesHelper(50);
     scene.add(axesHelper);
 
-    let colors: string[] = [];
+    const colors: string[] = [];
     clusters?.forEach(() => {
       colors.push(getRandomColor());
     })
