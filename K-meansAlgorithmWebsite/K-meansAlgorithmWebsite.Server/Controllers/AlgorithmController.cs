@@ -35,8 +35,14 @@ namespace K_meansAlgorithmWebsite.Server.Controllers
         [Route("ReceiveCoefficients")]
         public IActionResult GetCoefficients([FromBody] DataRequest request)
         {
+            if (request.RawData.GetLength(0) <= 1)
+                return BadRequest();
+        
             var result = _regressionService.FindCoefficients(request.RawData);
-    
+
+            if (result.Where(r => r.Equals(double.NaN)).Count() > 0)
+                return BadRequest();
+
             return Ok(new RegressionResponse { Coefficients = result });
         }
     }

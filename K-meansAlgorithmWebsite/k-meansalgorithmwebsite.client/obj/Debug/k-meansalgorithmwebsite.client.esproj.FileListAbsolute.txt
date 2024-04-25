@@ -1,2 +1,3 @@
 D:\cpp\K-meansAlgorithmWebsite\k-meansalgorithmwebsite.client\obj\Debug\k-meansalgorithmwebsite.client.esproj.CoreCompileInputs.cache
 C:\Users\Арсений\Desktop\4cем\ТПР\Курсовая_сайт\CourseWork\K-meansAlgorithmWebsite\k-meansalgorithmwebsite.client\obj\Debug\k-meansalgorithmwebsite.client.esproj.CoreCompileInputs.cache
+D:\cpp\CourseWork\K-meansAlgorithmWebsite\k-meansalgorithmwebsite.client\obj\Debug\k-meansalgorithmwebsite.client.esproj.CoreCompileInputs.cache

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Graph3D from './ThreeGraph';
+import Graph3D from './Graph3D';
 import "../src/css/styles.css"
 
 interface DataPoint {
@@ -18,9 +18,9 @@ interface ClusterResponse {
 }
 
 interface RegressionResponse {
-  Coefficients: number[] | null;
+  coefficients: number[] | null;
 }
-
+let datasets : number[][] = [];
 const App: React.FC = () => {
   let [x, setX] = useState<number>(0);
   let [y, setY] = useState<number>(0);
@@ -70,27 +70,28 @@ const App: React.FC = () => {
 
   const addData = async () => {
     updateGraph();
-    console.log(datasets);
     const res = await sendData(dataRequest, 'algorithm/ClusterData');
-    // const coefs = await sendData(dataRequest, 'algorithm/ReceiveCoefficients');
-
     setClusterResponse(res);
-    // setCoeffResponse(coefs);
+  }
+  const addCoeff = async () => {
+    updateGraph();
+    const coefs = await sendData(dataRequest, 'algorithm/ReceiveCoefficients');
+    setCoeffResponse(coefs);
   }
 
-  let datasets : number[][] = [];
-  const updateGraph = async () => {
+  const updateGraph = () : number[][] => {
     dataPoints.forEach((point : DataPoint, index) => {
       if (!datasets[index]){
         datasets.push(
           [
-          point.x,
-          point.y,
-          point.z
+            point.x,
+            point.y,
+            point.z
           ]
         );
       }
     });
+    return datasets;
   }
 
   return (
@@ -116,12 +117,10 @@ const App: React.FC = () => {
       </div>
       <div className="buttons">
         <button onClick={handleAddClick}>Add</button>
-        <button onClick={addData}>Send</button>
-        <button onClick={updateGraph}>Update</button>
+        <button onClick={addData}>Clusters</button>
+        <button onClick={addCoeff}>Coefficients</button>
       </div>
-
-      <Graph3D dataPoints = { datasets } clusters={ clusterResponse?.clusteringResult } />
-
+      <Graph3D dataPoints = { updateGraph() } clusters = { clusterResponse?.clusteringResult } />
       <div id='clusters'>Clusters count: {clusters}</div>
       {clusterResponse && (
       <div>
@@ -131,7 +130,7 @@ const App: React.FC = () => {
 
       {coeffResponse && (
       <div>
-        <div>clusters: {JSON.stringify(coeffResponse.Coefficients)}</div>
+        <div>clusters: {JSON.stringify(coeffResponse.coefficients)}</div>
       </div>
       )}
 
@@ -156,6 +155,7 @@ const App: React.FC = () => {
       </table>
       </div>
     </div>
+    
   );
 }
 

@@ -3,7 +3,7 @@
 "ServerUrl": "https://localhost:5173",
 "RedirectUrl": "",
 "LaunchCommand": "npm run dev",
-"WorkingDirectory": "C:\\Users\\Арсений\\Desktop\\4cем\\ТПР\\Курсовая_сайт\\CourseWork\\K-meansAlgorithmWebsite\\K-meansAlgorithmWebsite.Server\\..\\k-meansalgorithmwebsite.client",
+"WorkingDirectory": "D:\\cpp\\CourseWork\\K-meansAlgorithmWebsite\\K-meansAlgorithmWebsite.Server\\..\\k-meansalgorithmwebsite.client",
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }

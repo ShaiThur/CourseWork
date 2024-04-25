@@ -45,7 +45,7 @@ const Graph3D: React.FC<Props> = ({ dataPoints, clusters }) => {
       colors.push(getRandomColor());
     })
 
-    
+    console.log(dataPoints);
     const filteredDataPoints = dataPoints.filter(point => point.every(coord => coord >= 0 && coord <= 100));     
     filteredDataPoints.forEach((point, index) => {   
       const clusterIndex = clusters?.[index] ?? null;

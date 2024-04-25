@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("K-meansAlgorithmWebsite.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b8e6a4ce1d9ba570a1651cff42f1abe46e8ebd2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab230ef27e11194be2d730f2590ff023f507ce6c")]
 [assembly: System.Reflection.AssemblyProductAttribute("K-meansAlgorithmWebsite.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("K-meansAlgorithmWebsite.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
